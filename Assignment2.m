@@ -171,8 +171,6 @@ hold off;
 
 %% Question 2
 %% Part A
-
-close all;
 nx = 100;
 ny = 100;
 LC = 1;
@@ -351,6 +349,7 @@ title('Current Vs Mesh Size');
 xlabel('X Mesh Size');
 ylabel('Y Mesh Size');
 zlabel('Current');
+view([110 45]);
 grid(gca,'minor');
 surf(20:10:150,20:10:150,Curr);
 hold off;
@@ -425,7 +424,7 @@ hold on;
 title('Current vs Bottleneck');
 xlabel('Percentage Closed (%)');
 ylabel('Current');
-plot((2:4:50)./L/2, Curr(2:4:50));
+plot((2:4:50)./(L/2), Curr(2:4:50));
 grid on;
 grid(gca,'minor');
 hold off;
