@@ -171,12 +171,12 @@ hold off;
 
 %% Question 2
 %% Part A
-nx = 100;
+nx = 150;
 ny = 100;
 LC = 1;
 RC = 0;
 numIterations = 10000;
-L = 100;
+L = 150;
 W = 100;
 wb = 30;
 lb = 50;
@@ -240,7 +240,7 @@ xlabel('X Position');
 ylabel('Y Position');
 zlabel('Voltage (V)');
 grid(gca,'minor');
-view([110 45]);
+view([110 75]);
 surf(X',Y',Vnew);
 hold off;
 
